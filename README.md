@@ -30,4 +30,3 @@ When you run `bundle exec rspec`, you should have 26 passing tests (both feature
 - Rails 7.1.2
 
 Example wireframes to follow are found [here](https://backend.turing.edu/module3/projects/viewing_party_solo/wireframes)
-<img width="750" alt="Screenshot 2024-08-20 at 3 18 05 PM" src="https://github.com/user-attachments/assets/0f645f26-120f-430d-aeca-5202f1a7f7a9">
