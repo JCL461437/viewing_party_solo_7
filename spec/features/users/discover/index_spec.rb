@@ -8,13 +8,13 @@ RSpec.describe 'User Discover Page, Discover Index', type: :feature do
     end
 
     it 'a Button to Discover Top Rated Movies' do
-      visit users_discover_index(@user_1)
+      visit user_discover_index_path(@user_1)
 
       expect(page).to have_selector(:link_or_button, 'Discover Top Rated Movies')
     end
 
     it 'a text field to enter keyword(s) to search by movie title and a button to search by movie title' do
-      visit users_discover_index(@user_1)
+      visit user_discover_index_path(@user_1)
 
       expect(page).to have_content("Search By Movie Title:")
       expect(page).to have_selector(:link_or_button, 'Search by Movie Title')
