@@ -31,6 +31,6 @@ RSpec.describe 'Root Page, Welcome Index', type: :feature do
          expect(page).to have_link("Home")
       end
 
-     
+
    end
 end
