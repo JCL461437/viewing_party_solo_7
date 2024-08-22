@@ -7,10 +7,10 @@ class DiscoverController < ApplicationController
       faraday.headers["X-API-Key"] = Rails.application.credentials.movie_db[:key]
     end
 
-    response = conn.get("/v3/member/#{@user.id}?limit=20")
+    response = conn.get("/3/discover/movie")
 
     json = JSON.parse(response.body, symbolize_names: true)
-    @top_20_movies = json[:members]
+    @top_20_movies = json[:results]
   end
 
   private 
